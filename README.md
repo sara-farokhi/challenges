@@ -8,9 +8,10 @@
 
 1. React-Hook-Form / Formik
 2. State Management (Zustand, Recoil, Redux Or Context API)
-3. Ui Kit (Mantine, MUI Or Ant Design) استفاده از Mantine مزییت محسوب میشه
-4. Form Validator(Zod OR Yup)
-5. Typescript، استفاده از تایپ اسکریپت الزامی می باشد
+3. Ui Kit (Mantine, MUI Or Ant Design)
+4. در صورت استفاده نکردن از UI Kit پیشنهاد میشود از sass module استفاده کنید که مزیت محسوب می شود.
+5. Form Validator(Zod OR Yup)
+6. Typescript، استفاده از تایپ اسکریپت الزامی می باشد
 
 ## وظایف
 
