@@ -32,13 +32,13 @@ export const useTodoStore = create<TodoStore>((set) => ({
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
       );
       localStorage.setItem("todos", JSON.stringify(newTodos));
-      return { ...state, todos: newTodos }; // ✅ حفظ سایر پراپرتی‌های استیت
+      return { ...state, todos: newTodos };
     }),
 
   removeTodo: (id) =>
     set((state) => {
       const newTodos = state.todos.filter((todo) => todo.id !== id);
       localStorage.setItem("todos", JSON.stringify(newTodos));
-      return { ...state, todos: newTodos }; // ✅ حفظ سایر پراپرتی‌های استیت
+      return { ...state, todos: newTodos };
     }),
 }));
