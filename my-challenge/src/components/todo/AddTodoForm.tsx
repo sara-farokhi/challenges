@@ -4,13 +4,13 @@ import { z } from "zod";
 import { useTodoStore } from "../../store/useTodoStore";
 import CustomTextField from "../ui/CustomTextField";
 import CustomButton from "../ui/CustomButton";
-import { persianRegex } from "../../utils/persianRegex";
+import { checkPersianCharacters } from "../../utils/checkPersianCharacters";
 
 const schema = z.object({
   title: z
     .string()
     .min(3, "حداقل ۳ حرف وارد کنید")
-    .regex(persianRegex, "فقط حروف فارسی مجاز است")
+    .regex(checkPersianCharacters, "فقط حروف فارسی مجاز است")
     .refine((val) => val.trim().length > 0, {
       message: "مقدار نمیتواند خالی باشد",
     }),
